@@ -1,0 +1,14 @@
+# 登录态 —— 绝不能进仓库
+_cookie.txt
+*.har
+
+# 每个人自己扫出来的数据和产物
+qms_*.json
+report.html
+cookie_howto.html
+_probe.log
+
+__pycache__/
+*.pyc
+.DS_Store
+.venv/

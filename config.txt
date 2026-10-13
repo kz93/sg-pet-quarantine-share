@@ -1,0 +1,25 @@
+# ============================================================
+#  扫描设置 —— 改完存盘，下次双击「扫描」生效
+#  规则：每行 key = value，# 后面是注释
+# ============================================================
+
+# 出口国（宠物从哪个国家/地区出发）
+#   填 QMS 下拉里的英文名开头即可，比如 China、Malaysia、Australia；
+#   名字有歧义时改填代码。完整清单（要先填好 _cookie.txt）：
+#   python qms_probe.py --countries
+#   中国大陆 = Schedule III，强制 AQC 隔离 30 天；香港是 Schedule II，规则不同。
+country = China
+
+# 宠物数量：没有的填 0（填 0 的那类不会扫，省时间）
+cats = 1
+dogs = 0
+
+# 要订几间房（和 QMS 表单上的 No. of Catteries / Kennels 同一个意思）
+cattery_rooms = 1
+kennel_rooms = 1
+
+# 房型：fan = 风扇房，ac = 空调房；两种都想看就写 fan,ac
+room_types = fan,ac
+
+# 往后扫几个月（从明天算起）。月数越多请求越多，8 个月一轮大约 5-8 分钟
+months_ahead = 8
